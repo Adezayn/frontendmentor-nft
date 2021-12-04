@@ -1,0 +1,72 @@
+html{
+font-size: 18px;}
+*,*::after,*::backdrop{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+main{
+    width:20%;
+    margin: 100px auto;
+    background: hsl(216, 50%, 16%);
+    border-radius: 20px;
+}
+.card{
+padding:30px;
+position: relative;
+}
+.card-img > img{
+    width:100%;
+    border-radius: 5px;
+    display: block;
+    margin:auto;
+}
+.card-view{
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.card h1{
+    font-size:1.2rem;
+    font-weight:600;
+    color: hsl(0, 0%, 100%);
+}
+.card h2{
+    font-size:0.8rem;
+    font-weight:600;
+}
+.ether{
+    display:flex;
+    justify-content: space-between;
+}
+.et{
+    display: flex;
+    align-items: center;
+}
+.et-1{
+    padding-right: 5px;
+}
+span{
+    color: hsl(0, 0%, 100%);
+}
+.cyan, .card h1:hover, span:hover{
+    color:hsl(178, 100%, 50%) ;
+}
+/*h4::before{
+    width:100%;
+    height:5px;
+    background-color: hsl(215, 32%, 27%);
+}*/
+.attribution { 
+    position:fixed;
+    bottom:0;
+    font-size: 11px; text-align: center;
+}
+.attribution a { color: hsl(229, 19%, 78%); }
