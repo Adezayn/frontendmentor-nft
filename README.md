@@ -12,8 +12,10 @@ Users should be able to:
 <img src="/design/finished-products/nft_desktop_view.PNG">
 Desktop view
 
+
 <img src="/design/finished-products/nft_mobile_view.PNG">
 Mobile view
+
 
 <img src="/design/finished-products/nft_hover_state.PNG">
 Hover state
