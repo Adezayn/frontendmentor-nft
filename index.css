@@ -1,5 +1,4 @@
-html{
-font-size: 18px;}
+
 *,*::after,*::backdrop{
     box-sizing: border-box;
     margin:0;
@@ -12,41 +11,56 @@ body{
     font-weight: 400;
 }
 main{
-    width:20%;
-    margin: 100px auto;
+    width:300px;
+    margin: 50px auto;
     background: hsl(216, 50%, 16%);
     border-radius: 20px;
 }
 .card{
-padding:30px;
+padding:20px;
 position: relative;
 }
-.card-img > img{
+.card-img{
+    position:relative;
+}
+.main-img{
     width:100%;
     border-radius: 5px;
     display: block;
     margin:auto;
+    opacity:1;
 }
 .card-view{
     position: absolute;
     top:0;
     left:0;
-    text-align: center;
+    width:260px;
+    height:260px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 255, 246, 0.55);
+    opacity:0;
+    border-radius: 5px;
+}
+.card-img:hover .card-view{
+    opacity:1;
 }
 .card h1{
     font-size:1.2rem;
     font-weight:600;
     color: hsl(0, 0%, 100%);
+    margin:20px 0;
 }
 .card h2{
     font-size:0.8rem;
     font-weight:600;
 }
-.ether{
+.nft{
     display:flex;
     justify-content: space-between;
 }
-.et{
+.ether{
     display: flex;
     align-items: center;
 }
@@ -56,17 +70,44 @@ position: relative;
 span{
     color: hsl(0, 0%, 100%);
 }
-.cyan, .card h1:hover, span:hover{
+.nft{
+    margin:20px 0;
+}
+.coin, .card h1:hover, span:hover{
     color:hsl(178, 100%, 50%) ;
 }
-/*h4::before{
-    width:100%;
-    height:5px;
-    background-color: hsl(215, 32%, 27%);
-}*/
+.line {
+    border-top: 0.02rem solid hsla(215, 32%, 27%, 0.63);
+    display: block;
+}
+.creator-info{
+    margin-top:15px;
+    display: flex;
+    align-items: center;
+}
+.creator{
+    width: 30px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 .attribution { 
     position:fixed;
     bottom:0;
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    text-align: center;
 }
 .attribution a { color: hsl(229, 19%, 78%); }
+
+@media (max-width: 321px){
+    html{
+        font-size: 14px;
+    }
+    main{
+       width:250px;
+    }
+    .card-view{
+        width:210px;
+        height:210px;
+    }
+}
